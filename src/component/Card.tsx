@@ -14,7 +14,10 @@ export default function Card() {
     return <h2>Loading</h2>;
   }
 
-  return (
+  return loading ? (
+      <h1>Loading</h1>
+  ) : (
+
     <div className="mainContainer">
       <div className="container">
         {cards.map((card) => (
