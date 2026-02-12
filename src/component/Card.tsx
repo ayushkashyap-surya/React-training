@@ -1,9 +1,9 @@
 import React from "react";
-import { cardType } from "../services";
+import { CardType } from "../services";
 import '../styles.css'
 
 interface Props {
-  card: cardType;
+  card: CardType;
 }
 
 export default function Card({ card }: Props) {

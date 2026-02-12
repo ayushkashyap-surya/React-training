@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
-import fetchCardList, { cardType } from "./services";
+import fetchCardList, { CardType } from "./services";
 import Card from "../src/component/Card";
 
 export default function CardList() {
-  const [cards, setCards] = useState<cardType[]>([]);
+  const [cards, setCards] = useState<CardType[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
 

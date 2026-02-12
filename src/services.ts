@@ -1,4 +1,4 @@
-export interface cardType {
+export interface CardType {
   id: string;
   name: string;
   subtitle: string;
@@ -7,8 +7,8 @@ export interface cardType {
   yearOfJoining: number;
 }
 
-const fetchCardList = (): Promise<cardType[]> => {
-  return new Promise<cardType[]>((resolve) => {
+const fetchCardList = (): Promise<CardType[]> => {
+  return new Promise<CardType[]>((resolve) => {
     setTimeout(() => {
       resolve([
         {
